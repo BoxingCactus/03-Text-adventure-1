@@ -14,8 +14,8 @@
 
     "rooms": {
       "START": {
-        "name": "Starting place",
-        "desc": "This is the place to start!",
+        "name": "Outside of the Wyrmtooth Cave",
+        "desc": "The musty aroma of kobolds billows from the cave...",
         "exits": [
           {
             "verb": "NORTH",
@@ -41,8 +41,8 @@
         "inventory": []
       },
       "LOC2": {
-        "name": "Location 2",
-        "desc": "Here is the second location.",
+        "name": "Inside Wyrmtooth Cave...",
+        "desc": "The walls echo with kobold chittering...",
         "exits": [
         ],
         "inventory": []
