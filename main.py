@@ -24,7 +24,7 @@ def render(room,moves,points):
 def getInput(verbs):
     ''' Asks the user for input and normalizes the inputted value. Returns a list of commands '''
 
-    response = input('\nWhat would you like to do? ').strip().upper().split()
+    response = input('\nWhat would the mighty nerd, you, like to do? ').strip().upper().split()
     if (len(response)):
         #assume the first word is the verb
         response[0] = normalizeVerb(response[0],verbs)
@@ -35,7 +35,7 @@ def update(response,room,current,inventory):
     ''' Process the input and update the state of the world '''
     s = list(response)[0]  #We assume the verb is the first thing typed
     if s == "":
-        print("\nSorry, I don't understand.")
+        print("\nYou can't do that nerd!.")
         return current
     elif s == 'EXITS':
         printExits(room)

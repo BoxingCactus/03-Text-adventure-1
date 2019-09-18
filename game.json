@@ -15,12 +15,12 @@
     "rooms": {
       "START": {
         "name": "Outside of the Wyrmtooth Cave",
-        "desc": "The musty aroma of kobolds billows from the cave. The expansive maw of the cave lies to the north. Interlocked trees surround every way preventing passage...",
+        "desc": "The musty aroma of kobolds billows from the cave. The expansive maw of the cave lies to the north. Interlocked trees surround every way preventing passage for a human like yourself...",
         "exits": [
           {
             "verb": "NORTH",
             "target": "LOC2",
-            "condition": ""
+            "condition": ""}
         ],
         "inventory": []
       },
@@ -39,9 +39,48 @@
             "condition": ""
           },
           {
+            "verb": "NORTH",
+            "target": "LOC5",
+            "condition": ""
+          },
+          {
             "verb": "EAST",
             "target": "LOC4",
-            "condition": ""
+            "condition": ""}
         ],
         "inventory": []
-      },
+            },
+
+            "LOC3": {
+              "name": "The Grand Dining Hall",
+              "desc": "The sweet sweet smell of apple cider floods your nostrils as you find yourself in a grand dining hall. Rows of tables line the room like toy soldiers. A lone tubby kobold sits at a table sipping from a glass of cider... Seems like there is no where else to go other than the kitchen and the way you just came... And you wouldn't want to be rude to some kobold chefs right? They work too hard and your pristine morals won't allow you, nerd.",
+              "exits": [
+                {
+                  "verb": "EAST",
+                  "target": "LOC2",
+                  "condition": ""}
+              ],
+              "inventory": []
+            },
+            "LOC4": {
+              "name": "The Kobold Warrens",
+              "desc": "",
+              "exits": [
+                {
+                  "verb": "WEST",
+                  "target": "LOC2",
+                  "condition": ""}
+              ],
+              "inventory": []
+            },
+            "LOC5": {
+              "name": "The Throne Room",
+              "desc": "A grand looking throne room. Many trophies and decorations line the wall like vines on a wall. Clearly, the centerpiece of the room was the grand throne that seemed to be carved out of ivory. A colossus of a dragon lays on the throne snoozing away...",
+              "exits": [
+                {
+                  "verb": "SOUTH",
+                  "target": "LOC2",
+                  "condition": ""}
+              ],
+              "inventory": []
+            
