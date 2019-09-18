@@ -53,8 +53,13 @@
 
             "LOC3": {
               "name": "The Grand Dining Hall",
-              "desc": "The sweet sweet smell of apple cider floods your nostrils as you find yourself in a grand dining hall. Rows of tables line the room like toy soldiers. A lone tubby kobold sits at a table sipping from a glass of cider... Seems like there is no where else to go other than the kitchen and the way you just came... And you wouldn't want to be rude to some kobold chefs right? They work too hard and your pristine morals won't allow you, nerd.",
+              "desc": "The sweet sweet smell of apple cider floods your nostrils as you find yourself in a grand dining hall. Rows of tables line the room like toy soldiers. A lone tubby kobold sits at a table sipping from a glass of cider... Seems like there is no where else to go other than the kitchen and the way you just came... And you wouldn't want to be rude to some kobold chefs right?... Oh who am I kidding, I know you will bother the chefs in the kitchen to the north that totally doesn't have an easter egg, nerd.",
               "exits": [
+                {
+                  "verb": "NORTH",
+                  "target": "LOC6",
+                  "condition": ""
+                },
                 {
                   "verb": "EAST",
                   "target": "LOC2",
@@ -64,11 +69,28 @@
             },
             "LOC4": {
               "name": "The Kobold Warrens",
-              "desc": "",
+              "desc": "The smell of old cloth assaults your nostrils as you find yourself in what looks like some kind of warren. Kobolds dash between your ankles as you stare off into the dim corners of the room... You see a lone sleeping kobold resting in what looks deer hide...",
               "exits": [
                 {
                   "verb": "WEST",
                   "target": "LOC2",
+                  "condition": ""}
+              ],
+              "inventory": []
+            },
+            "LOC6": {
+              "name": "The Kitchen",
+              "desc": "R U D E. I deem you to be sentenced to kitchen jail for nerds!",
+              "exits": [],
+              "inventory": []
+            },
+            "LOC7": {
+              "name": "Behind the Throne",
+              "desc": "The smell of flowery candles fills your nostrils as you find a small makeshift shrine. In the center, surrounded by candles, is a picture of some dragon with rock solid abs and under it is the mysterious phrase... Husbando... This is probably some sort of witchcraft that you don't want to mess with nerd. Probably best to get out before she wakes up.",
+              "exits": [
+                {
+                  "verb": "SOUTH",
+                  "target": "LOC5",
                   "condition": ""}
               ],
               "inventory": []
@@ -80,7 +102,13 @@
                 {
                   "verb": "SOUTH",
                   "target": "LOC2",
-                  "condition": ""}
+                  "condition": ""},
+                {
+                    "verb": "NORTH",
+                    "target": "LOC7",
+                    "condition": ""}
               ],
               "inventory": []
-            
+            }
+          }
+        }
