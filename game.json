@@ -15,37 +15,33 @@
     "rooms": {
       "START": {
         "name": "Outside of the Wyrmtooth Cave",
-        "desc": "The musty aroma of kobolds billows from the cave...",
+        "desc": "The musty aroma of kobolds billows from the cave. The expansive maw of the cave lies to the north. Interlocked trees surround every way preventing passage...",
         "exits": [
           {
             "verb": "NORTH",
             "target": "LOC2",
             "condition": ""
-          },
-          {
-            "verb": "SOUTH",
-            "target": "LOC2",
-            "condition": ""
-          },
-          {
-            "verb": "WEST",
-            "target": "LOC2",
-            "condition": ""
-          },
-          {
-            "verb": "EAST",
-            "target": "LOC2",
-            "condition": ""
-          }
         ],
         "inventory": []
       },
       "LOC2": {
         "name": "Inside Wyrmtooth Cave...",
-        "desc": "The walls echo with kobold chittering...",
+        "desc": "The walls echo with kobold chittering... Various primative doodles scatter the walls. Some depict big ferocious dragons casting flames across the land... Others... Well... They looked like babies made them. To the west, the smell of delicious meats flows from the room... To the north the smell of brimstone and flames beckons you. To the east, the sound of snoring could be heard...",
         "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "START",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC3",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC4",
+            "condition": ""
         ],
         "inventory": []
-      }
-    }
-  }
+      },
